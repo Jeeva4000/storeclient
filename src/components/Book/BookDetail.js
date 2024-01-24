@@ -90,7 +90,7 @@ const BookDetail = () => {
     useEffect(() => {
         const fetchBook = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/books/${id}`);
+                const response = await axios.get(`https://bookstore-7x0p.onrender.com/books/${id}`);
                 setInputs(response.data.book);
             } catch (error) {
                 console.error('Error fetching book:', error);
@@ -102,7 +102,7 @@ const BookDetail = () => {
 
     const sendRequest = async () => {
         try {
-            await axios.put(`http://localhost:5000/books/${id}`, {
+            await axios.put(`https://bookstore-7x0p.onrender.com/books/${id}`, {
                 name: String(inputs.name),
                 author: String(inputs.author),
                 description: String(inputs.description),

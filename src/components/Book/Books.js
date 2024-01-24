@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Book from './Book';
 import "./Book.css"
 
-const URL = "http://localhost:5000/books/allbooks";
+const URL = "https://bookstore-7x0p.onrender.com/books/allbooks";
 
 const Books = () => {
     const [books, setBooks] = useState([]);

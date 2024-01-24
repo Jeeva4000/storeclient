@@ -84,7 +84,7 @@ const AddBook = () => {
 
     const sendRequest = async () => {
         try {
-            const response = await fetch('http://localhost:5000/books/add', {
+            const response = await fetch('https://bookstore-7x0p.onrender.com/books/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -93,7 +93,7 @@ const Book = (props) => {
 
     const deleteHandler = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/books/${_id}`, {
+            const response = await fetch(`https://bookstore-7x0p.onrender.com/books/${_id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
