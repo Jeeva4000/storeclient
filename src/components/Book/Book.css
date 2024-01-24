@@ -23,8 +23,9 @@ li {
     height: 100%;
     box-shadow: 5px 5px 10px #ccc;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     justify-content: center;
 
 }
@@ -76,7 +77,8 @@ li {
 }
 
 .book-image.small {
-    width: 50%;
+    width: 200px;
+    height: 200px;
 
 }
 
